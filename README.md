@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+[![](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/wild-flame)
 
-You can use the [editor on GitHub](https://github.com/abufarros/abufarros.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# jekyll-simple
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## simple
+simple is a theme designed for blogger using static site generator like jekyll, Hexo etc.
 
-### Markdown
+Especially for those who writes in both Chinese and English. The font-type setting looks really good when writers use Chinese mixed with English.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Supposedly, this could work with Japanese as well but never had a chance to try.
 
-```markdown
-Syntax highlighted code block
+## Story behind this theme
 
-# Header 1
-## Header 2
-### Header 3
+It has been long that using font with Chinese in web was a tedious and time-consuming work. It would be almost impossible to make different OS or devices to look the same.
 
-- Bulleted
-- List
+iOS 9 has pulished some new fonts in Chinese and I decided to make one theme that looks good on iOS devices, at the same time, making it acceptable on computers using other fonts.
 
-1. Numbered
-2. List
+So mobile goes first, then the macOS.
 
-**Bold** and _Italic_ and `Code` text
+## ^-^
 
-[Link](url) and ![Image](src)
-```
+You can click the button [Say Thanks!](https://saythanks.io/to/wild-flame) at the first of README if you use/like my project. :D
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Thanks you guys, I got a lot of thanks from people.
 
-### Jekyll Themes
+- [ryan](https://saythanks.io/note/a9a342ba-e9aa-4707-b169-05b6ae49757d)
+- [Daniel Moore](https://saythanks.io/note/da81706c-8884-4dbc-89b0-eed242ac3b19) and feel free to visit his work [border quiz](http://danielmoore.us/borders-quiz?singapore-planning-areas)
+- [David Laing](https://saythanks.io/note/fb5d24eb-3be8-4f92-842b-c6dd7ce4c239)
+- [Meg](https://saythanks.io/note/6d56e228-e17c-4641-9524-9f9fd6205068)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abufarros/abufarros.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+![image](https://user-images.githubusercontent.com/4491950/53502929-0d375880-3aea-11e9-9ce1-13eba2ec4643.png)
 
-### Support or Contact
+- And more
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![image](https://user-images.githubusercontent.com/4491950/53502875-e1b46e00-3ae9-11e9-97e4-d70d038a36e9.png)
