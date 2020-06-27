@@ -8,12 +8,12 @@ title: Pertemuan Ke-4 - Khalifah 'Umar bin Khaththab r.a.
 ### Nasab Beliau
 
 - Nama beliau adalah 'Umat bin Khaththab bin Nufail Al-Qurasyi, beliau adalah Abu Hafsh dan gelar beliau adalah Al-Faruq.
-- Beliau dilahirkan sesudah Nabi s.a.w.dengan selisih tigabelas tahun. Semenjak kecil terdidik atas soal-soal ketangkasan, kesosialan, keberanian dan berkata benar.
+- Beliau dilahirkan sesudah Nabi s.a.w. dengan selisih tigabelas tahun. Semenjak kecil terdidik atas soal-soal ketangkasan, kesosialan, keberanian dan berkata benar.
 
 ### 'Umar di Masa Islam
 
-- Ketika Nabi s.a.w. diutus menjadi Rasul, beliau adalah termasuk salah seorang yang sangat memusuhi Islam, sampai kaum Muslimin hijrah ke Habasyah. Setelah beliau mengetahui bahwa kaum Muslimin sangat memegang teguh agamanya sekalipum mereka mengalami penderitaan dan meninggalkan negerinya, maka lalu Allah membuka hati beliau kepada Islam, lalu masuk Islamlah sehingga beliau menjadi tiang kekuatan orang-orang Islam, sampai para sahabat berkata, "Kita selalu dalam kemenangan semenjak 'Umar masuk Islam".
-- Masuk Islamnya ‘Umar itu karena barakahnya do’a Rasulullah: "a Allah, muliakanlah Islam dengan salah seorang yang lebih Engkau cintai dari kedua laki-laki ini: Abu Jahal atau Umar bin Al-Khaththab”. (HR. Tirmidzi)
+- Ketika Nabi s.a.w. diutus menjadi Rasul, beliau adalah termasuk salah seorang yang sangat memusuhi Islam, sampai kaum Muslimin hijrah ke Habasyah. Setelah beliau mengetahui bahwa kaum Muslimin sangat memegang teguh agamanya sekalipun mereka mengalami penderitaan dan meninggalkan negerinya, maka lalu Allah membuka hati beliau kepada Islam, lalu masuk Islamlah sehingga beliau menjadi tiang kekuatan orang-orang Islam, sampai para sahabat berkata, "Kita selalu dalam kemenangan semenjak 'Umar masuk Islam".
+- Masuk Islamnya ‘Umar itu karena barakahnya do’a Rasulullah: "Ya Allah, muliakanlah Islam dengan salah seorang yang lebih Engkau cintai dari kedua laki-laki ini: Abu Jahal atau Umar bin Al-Khaththab”. (HR. Tirmidzi)
 - Nabi berkata kepada 'Umar, "Demi Tuhan yang jiwaku dalam genggamannya. Tidak akan menemui engkau syaithan-syaithan itu pada suatu jalan, melainkan akan berjalan selain jalanmu itu".
 - Kemudian banyaklah petunjuk-petunjuk 'Umar kepada Rasulullah tentang sesuatu, sesuai dengan apa yang diterangkan dalan Qur'an, seperti masalah tawanan Badar dan masalah hijab.
 

@@ -21,7 +21,7 @@ Khalifah itu orang yang menggantikan kedudukan Rasulullah s.a.w. dalam melindung
 [Pertemuan Ke-4](pertemuan-4.html)
 : Perjalanan hidup 'Umar bin Khaththab, penaklukan negeri Syam, Baitul Makdis, Mesir, Iskandariyah dan Shahra'.
 
-[Pertemuan Ke-5](pertemuam-5.html)
+[Pertemuan Ke-5](pertemuan-5.html)
 : Lanjutan penaklukan Irak, penaklukan Qadisiyah, penalukan Madain dan berakhirnya kerajaan Persia.
 
 [Pertemuan Ke-6](pertemuan-6.html)
