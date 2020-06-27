@@ -50,7 +50,7 @@ title: Pertemuan Ke-4 - Khalifah 'Umar bin Khaththab r.a.
 - Setelah itu berjalanlah 'Amr bin Ash ke Iskandariyah dan mengajak kepada rakyatnya untuk masuk Islam, tetapi ajakannya ditolak. Oleh karena itu lalu mereka diperangi hingga ditaklukkan negerinya dengan paksa.
 - Kemudian 'Amr bin Ash membawa tentaranya ke Shahra' (Libia) hingga sampai ke Barqah lalu ditaklukkannya. Dan ditaklukkan pula Tripoli bagian barat. Beliau bermaksud menuju Tunisia dan Aljazair untuk menyiarkan agama Islam di Afrika seluruhnya. Tetapi dilarang oleh 'Umar, beliau menyuruh berhenti pada batasnya.
 
-### Referensi dan Presentasi
+## Referensi dan Presentasi
 
 1. [Terjemah Kitab Khulashoh Nurul Yakin Jilid 3](https://terjemahkitab.com/terjemah-khulashoh-nurul-yaqin-juz-3/)
 2. [Al Bidayah Wan Nihayah - Masa Khulafa'ur Rasyidin (Ibnu Katsir)](https://saripedia.files.wordpress.com/2010/08/06-al-bidayah-wan-nihayah-masa-khulafaur-rasyidin-ibnu-kasir.pdf)
@@ -62,7 +62,7 @@ Presentasi dapat dunduh di sini:
 3. [Penaklukan Baitul Makdis](https://docs.google.com/presentation/d/10d8W9fiY-rxkqKR3lakOZkRMSe5N2t_kwZRppt886z4/edit?usp=sharing)
 4. [Penaklukan Mesir, iskandariyah dan Shahra'](https://docs.google.com/presentation/d/1d1XV9KmWF4pQYZ6RJmGWpFNPn0u_LQ8cOJZfzdUB1tg/edit?usp=sharing)
 
-### Latihan
+## Latihan
 
 1. Siapakah ‘Umar bin khaththab itu? 
 2. Dan kapan belia dilahirkan?
