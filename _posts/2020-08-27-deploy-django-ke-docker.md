@@ -49,3 +49,11 @@ docker run \
     -v ~/:/data \
     django
 {% endhighlight %}
+
+Parameter `-v ~/:/data` adalah parameter tambahan untuk mengaitkan direktori `/data` ke home directory kita.
+
+Sekarang kita bisa mengakses django kita dengan membuka alamat `http://localhost:8000/` dengan browser kesayangan kita. 
+
+Selamat mencoba.
+
+Bersambung...
