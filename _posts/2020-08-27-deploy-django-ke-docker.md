@@ -13,7 +13,7 @@ Baiklah, kita mulai.
 
 Di direktori project Django, buat file `Dockerfile` yang isinya sbb:
 
-{% highlight ruby %}
+{% highlight bash %}
 FROM python:3.8
 
 # set work directory
@@ -33,8 +33,19 @@ CMD exec uvicorn djangotest.asgi:application --host=0.0.0.0 --port=8000
 
 Jalankan perintah berikut untuk membuat image dengan nama `django`:
 
-{% highlight ruby %}
+{% highlight bash %}
 docker build -t django .
 {% endhighlight %}
 
 Tunggu sampai proses selesai, mungkin memerlukan waktu lama, karena mengunduh file-file yang dibutuhkan dari internet.
+
+Jalankan perintah berikut untuk membuat container dengan nama `django`, dan menjalankan django di port 8000:
+
+{% highlight bash %}
+docker run \
+    -d \
+    --name django \
+    -p 8000:8000 \
+    -v ~/:/data \
+    django
+{% endhighlight %}
