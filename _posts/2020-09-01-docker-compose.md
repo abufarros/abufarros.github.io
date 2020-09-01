@@ -2,7 +2,7 @@
 layout: post
 title:  "Memanfaatkan Docker Compose"
 date: 2020-09-01 13:16:00 +0700
-categories: devel, infrastruktur
+categories: devel infrastruktur
 ---
 
 Pada post yang lalu telah dibahas cara membangun Docker Image, membuat dan menjalanakan sebuah container. Kali ini akan kita bahas cara membuat dan menjalankan beberapa container sekaligus menggunakan tool: `docker-compose`.
@@ -60,7 +60,6 @@ docker-compose up -d
 Perintah tersebut akan membuat dan menjalankan 2 buah container yang bernama `registry` dan `ui`.
 
 Catatan:
---------
 
 `registry` yang kita buat di atas, digunakan sebagai `privat repostory` seperti `hub.docker.com`, yang menyimpan berbagai image yang kita buat di jaringan lokal.
 
