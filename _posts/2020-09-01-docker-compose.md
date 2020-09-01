@@ -59,7 +59,8 @@ docker-compose up -d
 
 Perintah tersebut akan membuat dan menjalankan 2 buah container yang bernama `registry` dan `ui`.
 
-==== Catatan:
+Catatan:
+--------
 
 `registry` yang kita buat di atas, digunakan sebagai `privat repostory` seperti `hub.docker.com`, yang menyimpan berbagai image yang kita buat di jaringan lokal.
 
