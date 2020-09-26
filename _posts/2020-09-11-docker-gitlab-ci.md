@@ -39,7 +39,7 @@ Keterangan:
 
 ### Membuat Trigger
 
-Trigger di sini yang akan mengotomasi membuat job ketika aksi tertentu. Pada contoh ini job akan dibuat ketika ada tag baru. Untuk membuat trigger, cukup dengan membuat file `gitlab-ci.yml` di root direktori project kita. Contoh:
+Trigger di sini yang akan mengotomasi membuat job ketika aksi tertentu. Pada contoh ini job akan dibuat ketika ada tag baru. Untuk membuat trigger, cukup dengan membuat file `.gitlab-ci.yml` di root direktori project kita. Contoh:
 
 {% highlight bash %}
 image: docker:19.03.12
