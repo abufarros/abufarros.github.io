@@ -14,45 +14,111 @@ Baiklah, kita mulai.
 Di direktori project Django, buat file `Dockerfile` yang isinya sbb:
 
 {% highlight bash %}
-FROM python:3.8
+FROM python:3.8-alpine
+ENV PYTHONUNBUFFERED 1
 
 # set work directory
 WORKDIR /app
 
-# install dependencies
-RUN pip install --upgrade pip
-COPY ./requirements.txt .
-RUN pip install -r requirements.txt
-
 # copy project
 COPY . .
 
+# install dependencies
+RUN apk add --no-cache --virtual .build-deps \
+    build-base ca-certificates gcc linux-headers musl-dev \
+    libffi-dev jpeg-dev zlib-dev openldap-dev \
+    libsasl postgresql-dev \
+    && pip install --upgrade pip \
+    && pip install -U setuptools \
+    && pip install -r requirements.txt \
+    && find /usr/local \
+        \( -type d -a -name test -o -name tests \) \
+        -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
+        -exec rm -rf '{}' + \
+    && runDeps="$( \
+        scanelf --needed --nobanner --recursive /usr/local \
+                | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' \
+                | sort -u \
+                | xargs -r apk info --installed \
+                | sort -u \
+    )" \
+    && apk add --virtual .rundeps $runDeps \
+    && apk del .build-deps
+
 # run django
-CMD exec uvicorn djangotest.asgi:application --host=0.0.0.0 --port=8000
+CMD exec uvicorn dirman.asgi:application --host=0.0.0.0 --port=8000
 {% endhighlight %}
 
-Jalankan perintah berikut untuk membuat image dengan nama `django`:
+Jalankan perintah berikut untuk membuat image dengan nama `dirman`:
 
 {% highlight bash %}
-docker build -t django .
+docker build -t dirman .
 {% endhighlight %}
 
 Tunggu sampai proses selesai, mungkin memerlukan waktu lama, karena mengunduh file-file yang dibutuhkan dari internet.
 
-Jalankan perintah berikut untuk membuat container dengan nama `django`, dan menjalankan django di port 8000:
+Jalankan perintah berikut untuk membuat container dengan nama `dirman`, dan menjalankannya di port 8000:
 
 {% highlight bash %}
 docker run \
     -d \
-    --name django \
+    --rm \ 
+    --name dirman \
     -p 8000:8000 \
     -v ~/:/data \
-    django
+    --log-driver=journald \
+    dirman
 {% endhighlight %}
 
 Parameter `-v ~/:/data` adalah parameter tambahan untuk mengaitkan direktori `/data` ke home directory kita.
 
+Log disimpan di `journald`, untuk membaca log, jalankan perintah:
+
+{% highlight bash %}
+sudo journalctl -b CONTAINER_NAME=dirman
+{% endhighlight %}
+
 Sekarang kita bisa mengakses django kita dengan membuka alamat `http://localhost:8000/` dengan browser kesayangan kita. 
+
+`Dockerfile` dapat dibuat lebih kompleks seperti contoh di bawah, bandingkan dengan contoh di atas.
+
+{% highlight bash %}
+FROM python:3.8-alpine
+ENV PYTHONUNBUFFERED 1
+
+# set work directory
+WORKDIR /app
+
+# copy project
+COPY . .
+COPY dirman/settings_docker.py dirman/settings.py
+
+# install dependencies
+RUN apk add --no-cache --virtual .build-deps \
+    build-base ca-certificates gcc linux-headers musl-dev \
+    libffi-dev jpeg-dev zlib-dev openldap-dev \
+    libsasl postgresql-dev mariadb-dev \
+    mariadb-client python3-dev \
+    && pip install --upgrade pip \
+    && pip install -U setuptools \
+    && pip install -r requirements.txt \
+    && find /usr/local \
+        \( -type d -a -name test -o -name tests \) \
+        -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
+        -exec rm -rf '{}' + \
+    && runDeps="$( \
+        scanelf --needed --nobanner --recursive /usr/local \
+                | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' \
+                | sort -u \
+                | xargs -r apk info --installed \
+                | sort -u \
+    )" \
+    && apk add --virtual .rundeps $runDeps \
+    && apk del .build-deps
+
+# run django
+CMD uvicorn dirman.asgi:application --host=0.0.0.0 --port=8000
+{% endhighlight %}
 
 Selamat mencoba.
 
