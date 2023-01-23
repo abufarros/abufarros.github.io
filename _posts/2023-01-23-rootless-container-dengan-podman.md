@@ -8,17 +8,25 @@ categories: devel infrastruktur
 Ikhtisar:
 
 - Menyiapkan RoxyLinux Container Management
-- Mengelola container dan image
-- Mengelola pod
+- Mengelola container, image dan pod dengan Podman
 - Menyiapkan rootless service dengan systemd
 
-Tulisan ini diawali dengan penjelasan secara singkat proses instalasi RoxyLinux sebagai server container. Untuk memudahkan, server dilengkapi dengan Cockpit web based interface untuk server. Alasan penulis menggunakan RoxyLinux adalah karena dukungan dari pengembang distro ini cukup panjang, selain itu proses instalasi dan konfigurasinya cukup mudah.
+Tulisan ini diawali dengan penjelasan secara singkat proses instalasi RoxyLinux sebagai server container. Untuk memudahkan, server dilengkapi dengan Cockpit web based interface untuk server. Alasan penulis menggunakan RoxyLinux adalah karena dukungan dari pengembang distro ini cukup panjang hingga 10 tahun, selain itu proses instalasi dan konfigurasinya cukup simpel dan mudah.
 
-*Podman* adalah container management yang digunakan untuk membuat, menjalankan dan mengelola container. *Podman* singkatan dari *Pod Manager*. Pod adalah konsep yang populer dalam projek Kubernetes; yang memuat satu container atau lebih yang bekerja sama, berbagi sumber daya yang sama. 
+*Podman* adalah container management yang digunakan untuk membuat, menjalankan dan mengelola container. *Podman* singkatan dari *Pod Manager*. *Pod* adalah konsep yang populer dalam projek *Kubernetes*; yang memuat satu container atau lebih yang bekerja sama, berbagi sumber daya yang sama; *Deploy* container di *Kubernetes* menjadi lebih mudah. 
+
+## Menyiapkan RoxyLinux Container Management
 
 boot iso -> Server -> add: Container management
-sudo systemctl enable --now cockpit.socket
 
-loginctl enable-linger
-systemctl --user enable --now podman
-podman --remote info
+Untuk mengaktifkan Cockpit, jalankan perintah:
+
+    sudo systemctl enable --now cockpit.socket
+
+## Mengelola container, image dan pod dengan Podman
+
+## Menjalankan Podman Mode Rootless dengan Systemd
+
+    loginctl enable-linger
+    systemctl --user enable --now podman
+    podman --remote info
