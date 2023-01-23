@@ -2,7 +2,7 @@
 layout: post
 title:  "Rootless container di RoxyLinux 9 dengan Podman"
 date: 2023-01-23 13:05:00 +0700
-categories: devel infrastruktur
+categories: infrastruktur
 ---
 
 Ikhtisar:
