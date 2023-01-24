@@ -35,8 +35,8 @@ Buat *SSH key* dengan perintah seperti berikut:
 
 Buka *Cockpit*: https://[server_address]:9090, kemudian login dengan user linux yang telah dibuat sebelumnya. Klik menu **Account** di samping kiri, klik nama anda, pada **Authorized public SSH keys** klik tombol **Add key**, masukkan isi teks *id_rsa.pub* yang telah dibuat menggunakan *ssh-keygen*, lalu simpan. Sekarang anda bisa login ke server dengan mode *password less*.
 
-Install *Podman* di *Windows*, saya menggunakan *Podman* versi yang sama dengan server yaitu 4.2.0. *Podman for Windows* dapat diunduh di: (https://github.com/containers/podman/releases/download/v4.2.0/podman-v4.2.0.msi)
- 
+Install *Podman* di *Windows*, saya menggunakan *Podman* versi yang sama dengan server yaitu 4.2.0. *Podman for Windows* dapat diunduh di: [GitHub](https://github.com/containers/podman/releases/download/v4.2.0/podman-v4.2.0.msi).
+
 ## Mengelola container, image dan pod dengan Podman
 
 In progress...
