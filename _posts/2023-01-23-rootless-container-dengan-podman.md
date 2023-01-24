@@ -69,7 +69,7 @@ Test koneksi dengan perintah:
 
     podman -c suyadi info
 
-Apabila muncul kira-kira seperti berikut, berarti *Podman remote* sudah siap digunakan:
+Apabila muncul kira-kira seperti berikut, berarti *Podman remote* sudah siap digunakan, semua perintah *Podman* bisa dijalankan secara remote:
 
     ...
     version:
