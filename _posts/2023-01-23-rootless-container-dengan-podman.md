@@ -42,11 +42,31 @@ Sekarang anda dapat login *SSH* ke server tanpa menggunakan password menggunakan
 
 ## Mengelola container, image dan pod dengan Podman
 
-*Podman* dikembangkan untuk meningkatkan desain dari *Docker*. Berikut perbandingan amtara *Podman* dengan *Docker*:
+*Podman* dikembangkan untuk meningkatkan desain dari *Docker*. Berikut perbandingan antara *Podman* dengan *Docker*:
 
 | Feature | Podman | Docker | Description |
 | :------ | :----: | :----: | :---------- |
-| Support all OCI and Docker images | Y | Y | Pulls and runs container images from cantainer registries |
+| Support all OCI and Docker images | Y | Y | Pulls and runs container images from cantainer registries. |
+| Launches OCI container engines | Y | Y | Lauches runc, crun, Kata, gVisor, and OCI container engines. |
+| Simple command-line interface | Y | Y | Podman and Docker share the same CLI. |
+| Integration with systemd | Y | N | Podman support running systemd inside container as well as many systemd features. |
+| Fork/exec model | Y | N | The container is a child of the command. |
+| Fully suppors user namespace | Y | N | Only Podman support running containers in separate user namespaces. |
+| Client-server model | Y | Y | Docker is a REST API daemon. Podman supports REST APIs via a systemd socket-activated service. |
+| Support docker-compose | Y | Y | Compose scripts work against both REST APIs. Podman works in rootless mode. |
+| Support docker-py | Y | Y | Docker-py Python bindings work against bot REST APIs. Podman works in rootless mode. Podman also support podman-py for running advances features. |
+| Daemonless | Y | N | The Podman command runs like a traditional command-line tool, while Docker requires multiple root-running daemons. |
+| Supports Kubernetes-like pods | Y | N | Podman supports running multiple containers within the same pod. |
+| SUpport Kubernetes YAML | Y | N | Podman can launch containers and pods bases on Kubernetes YAML. |
+| Support Docker Swarm | N | Y | Podman beleave the future for orchestrated multinode containers is Kubernetes and does not plan on implementing Swarm. |
+| Customizable registries | Y | N | Podman alows yout tu configure registries for short-name expansion. Docker is hardcoded to docker.io when you specify a short name. |
+| Customizable defaults | Y | N | Podman support fully customizing all of its defaults, including security, namespaces, and volumes. |
+| macOS support | Y | Y | Podman and Docker support running containers on a Mac via a VM running Linux. |
+| Windows support | Y | Y | Podman and Docker support running container on Windows WSL2 or a VM running Linux. |
+| Linux support | Y | Y | Podman and Docker are supported on all major Linux distributions. |
+| Conatainers aren't stopped on software upgrade | Y | N | Podman is not required to remain running when containers are running. Since the Docker daemon is monitoring containers, by default, when it stops, all containers stop |  
+
+Fitur *Podman* yang paling signifikan adalah kemampuan berjalan dalam mode *rootless*.
 
 ## Menjalankan Podman Mode Rootless dengan Systemd
 
