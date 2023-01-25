@@ -42,7 +42,11 @@ Sekarang anda dapat login *SSH* ke server tanpa menggunakan password menggunakan
 
 ## Mengelola container, image dan pod dengan Podman
 
-In progress...
+*Podman* dikembangkan untuk meningkatkan desain dari *Docker*. Berikut perbandingan amtara *Podman* dengan *Docker*:
+
+| Feature | Podman | Docker | Description |
+| :------ | :----: | :----: | :---------- |
+| Support all OCI and Docker images | Y | Y | Pulls and runs container images from cantainer registries |
 
 ## Menjalankan Podman Mode Rootless dengan Systemd
 
